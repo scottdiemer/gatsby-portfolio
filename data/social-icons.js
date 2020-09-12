@@ -1,5 +1,9 @@
 import React from "react"
-import { AiFillLinkedin, AiFillTwitterSquare, AiFillGithub } from "react-icons"
+import {
+  AiFillLinkedin,
+  AiFillTwitterSquare,
+  AiFillGithub,
+} from "react-icons/ai"
 
 export default [
   {
