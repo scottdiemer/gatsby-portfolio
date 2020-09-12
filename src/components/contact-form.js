@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"
-import axios from "react-axios"
+import React, { useState } from "react"
+import axios from "axios"
 
 const ContactForm = () => {
   const [serverState, setServerState] = useState({
@@ -20,6 +20,7 @@ const ContactForm = () => {
   const handleOnSubmit = e => {
     e.preventDefault()
     const form = e.target
+    // TODO: Switch location of email address
     setServerState({ submitting: true })
     axios({
       method: "post",
