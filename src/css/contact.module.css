@@ -1,4 +1,59 @@
 .contact {
-  background-color: var(--offWhite);
-  margin-bottom: 0;
+  background-color: var(--primaryColor);
+  padding: 3rem;
+}
+
+form {
+  background-color: var(--mainGray);
+  height: 440px;
+  width: 600px;
+  border-radius: 8px;
+  box-shadow: var(--darkShadow);
+  margin: 5vh auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid var(--primaryColor);
+}
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid var(--darkGray);
+}
+label:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: var(--darkGray);
+}
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid var(--primaryColor);
+  border-radius: 8px;
+  background: 0;
+  color: var(--primaryColor);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
 }
