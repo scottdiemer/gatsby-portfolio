@@ -1,6 +1,7 @@
 .contact {
   background-color: var(--primaryColor);
-  padding: 3rem;
+  font-family: var(--defaultFont);
+  padding: 2rem;
 }
 
 form {
@@ -25,30 +26,35 @@ textarea {
   outline: none;
   resize: none;
   border: 0;
-  transition: all 0.3s;
+  transition: var(--mainTransition);
   border-bottom: 2px solid var(--primaryColor);
 }
 input:focus,
 textarea:focus {
   border-bottom: 2px solid var(--darkGray);
 }
+label {
+  font-family: var(--titleFontFamily);
+}
+
 label:before {
   content: attr(type);
   display: block;
   margin: 28px 0 0;
-  font-size: 14px;
   color: var(--darkGray);
 }
 button {
   float: right;
   padding: 8px 12px;
-  margin: 8px 0 0;
+  margin: 1.5rem 0 0;
   border: 2px solid var(--primaryColor);
   border-radius: 8px;
   background: 0;
   color: var(--primaryColor);
+  font-family: var(--titleFontFamily);
+  font-weight: var(--titleFontWeight);
   cursor: pointer;
-  transition: all 0.3s;
+  transition: var(--mainTransition);
 }
 button:hover {
   background: var(--primaryColor);

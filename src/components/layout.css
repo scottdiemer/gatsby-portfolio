@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
 :root {
@@ -41,6 +41,7 @@
 body {
   font-family: var(--mainFontFamily);
   font-weight: var(--mainFontWeight);
+  font-size: 1rem;
   line-height: 1.7;
 }
 
