@@ -21,7 +21,7 @@ const Navbar = () => {
             buttonStyle={{ outline: "none" }}
             {...{ isActive, toggleButton }}
             buttonColor="transparent"
-            barColor="black"
+            // barColor="black"
           />
         </div>
         <ul

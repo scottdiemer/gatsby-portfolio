@@ -23,7 +23,9 @@
   text-transform: capitalize;
   color: var(--mainBlack);
   transition: var(--mainTransition);
-  font-weight: bold;
+  font-family: var(--titleFontFamily);
+  font-weight: var(--titleFontWeight);
+  font-size: var(--ms-large-1);
   letter-spacing: var(--mainSpacing);
 }
 
@@ -35,11 +37,14 @@
   .navbar {
     padding: 0 2rem;
   }
+  .toggle-button {
+    background-color: "transparent";
+  }
 }
 
 @media screen and (min-width: 992px) {
   .toggle-button {
-    display: none !important;
+    display: none;
   }
 
   .nav-center {

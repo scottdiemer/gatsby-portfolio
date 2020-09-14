@@ -6,7 +6,7 @@ const Title = ({ title, subtitle, className }) => {
     <div className={className}>
       <h4>
         <span className="title">{title}</span>
-        <span>{subtitle}</span>
+        <span className="subtitle">{subtitle}</span>
       </h4>
     </div>
   )
@@ -14,13 +14,16 @@ const Title = ({ title, subtitle, className }) => {
 
 export default styled(Title)`
   text-transform: uppercase;
-  font-size: 2.3rem;
   margin-bottom: 2rem;
   h4 {
     text-align: center;
     letter-spacing: 7px;
   }
   .title {
+    color: var(--mainBlack);
+  }
+  .subtitle {
+    color: var(--mainBlack);
   }
   span {
     display: block;

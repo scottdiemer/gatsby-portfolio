@@ -13,7 +13,6 @@ form {
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
   position: relative;
 }
 
@@ -26,7 +25,6 @@ textarea {
   outline: none;
   resize: none;
   border: 0;
-  font-family: "Montserrat", sans-serif;
   transition: all 0.3s;
   border-bottom: 2px solid var(--primaryColor);
 }
@@ -45,7 +43,6 @@ button {
   float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
-  font-family: "Montserrat", sans-serif;
   border: 2px solid var(--primaryColor);
   border-radius: 8px;
   background: 0;
