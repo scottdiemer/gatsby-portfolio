@@ -24,6 +24,7 @@ export default styled(Project)`
   box-shadow: var(--lightShadow);
   border-radius: 8px;
   text-align: center;
+  margin: 1rem;
   .description {
     padding: 1rem;
   }
