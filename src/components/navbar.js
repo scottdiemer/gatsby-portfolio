@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { HamburgerVortexReverse } from "react-animated-burgers"
 import styles from "../css/navbar.module.css"
@@ -12,16 +12,15 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
+      {/* <nav className={`${styles.navbar} ${styles.sticky}`}> */}
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <h4>Scott Diemer</h4>
           <HamburgerVortexReverse
             className={styles.toggleButton}
             buttonWidth={40}
-            buttonStyle={{ outline: "none" }}
+            buttonStyle={{ outline: "none", background: "transparent" }}
             {...{ isActive, toggleButton }}
-            buttonColor="transparent"
-            // barColor="black"
           />
         </div>
         <ul

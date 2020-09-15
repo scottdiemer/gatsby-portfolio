@@ -33,17 +33,20 @@
   color: var(--primaryColor);
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 @media screen and (min-width: 576px) {
   .navbar {
     padding: 0 2rem;
   }
-  .toggle-button {
-    background-color: "transparent";
-  }
 }
 
 @media screen and (min-width: 992px) {
-  .toggle-button {
+  .toggle-button div span {
     display: none;
   }
 

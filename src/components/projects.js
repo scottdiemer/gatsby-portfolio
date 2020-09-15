@@ -42,6 +42,7 @@ const Projects = () => {
 
           return (
             <Project
+              className={styles.project}
               key={index}
               title={title}
               description={description}
