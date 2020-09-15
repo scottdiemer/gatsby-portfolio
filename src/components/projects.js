@@ -32,7 +32,7 @@ const Projects = () => {
 
   return (
     <section className={styles.projects}>
-      <Title title="my" subtitle="projects" />
+      <Title title="projects" />
       <div className={styles.center}>
         {projects.map(({ node: project }, index) => {
           const title = project.title

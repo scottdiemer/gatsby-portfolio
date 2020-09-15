@@ -8,25 +8,32 @@ const Title = ({ title, subtitle, className }) => {
         <span className="title">{title}</span>
         <span className="subtitle">{subtitle}</span>
       </h4>
+      <div className="underline"></div>
     </div>
   )
 }
 
 export default styled(Title)`
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 2rem;
   h4 {
     text-align: center;
     letter-spacing: 7px;
   }
   .title {
-    color: var(--mainBlack);
+    color: var(--titleColor);
   }
   .subtitle {
-    color: var(--mainBlack);
+    color: var(--titleColor);
   }
   span {
     display: block;
+  }
+  .underline {
+    width: 5rem;
+    height: 0.2rem;
+    background: var(--primaryColor);
+    margin: 0.5rem auto;
   }
   @media (min-width: 576px) {
     span {

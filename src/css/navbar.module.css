@@ -1,3 +1,6 @@
+.navbar {
+  background-color: var(--primaryBackgroundColor);
+}
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -21,7 +24,7 @@
   padding: 1rem 1.25rem;
   text-decoration: none;
   text-transform: capitalize;
-  color: var(--mainBlack);
+  color: var(--titleColor);
   transition: var(--mainTransition);
   font-family: var(--titleFontFamily);
   font-weight: var(--titleFontWeight);
@@ -31,12 +34,21 @@
 
 .nav-links a:hover {
   color: var(--primaryColor);
+  text-decoration-thickness: 5rem;
+  text-decoration: underline;
 }
+
+/* .underline { */
+/*   width: 50%; */
+/*   border-bottom: 5px solid var(--primaryColor); */
+/* } */
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #252525;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 576px) {

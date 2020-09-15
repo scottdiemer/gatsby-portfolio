@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
 :root {
-  --primaryColor: #3fd0d4;
+  --primaryColor: #feb633;
+  --primaryBackgroundColor: #2b2c2c;
+  --secondaryBackgroundColor: #303131;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -12,10 +14,12 @@
   --mainSpacing: 4px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --insetBoxShadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   --mainFontFamily: "Lora";
   --mainFontWeight: 400;
   --titleFontFamily: "Roboto";
   --titleFontWeight: bold;
+  --titleColor: #cccccc;
   /* scale for 1.2 */
   --ms-small-1: 1rem;
   --ms-small-2: 1.2rem;
@@ -45,6 +49,14 @@ body {
   line-height: 1.7;
 }
 
+section:nth-of-type(2n + 1) {
+  background-color: var(--secondaryBackgroundColor);
+}
+
+section:nth-of-type(2n) {
+  background-color: var(--primaryBackgroundColor);
+}
+
 h1,
 h2,
 h3,
@@ -53,6 +65,7 @@ h5,
 h6 {
   font-family: var(--titleFontFamily);
   font-weight: var(--titleFontWeight);
+  color: var(--titleColor);
 }
 
 /* Small scale for small screens: */

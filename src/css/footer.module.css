@@ -23,6 +23,11 @@
 
 .icons a {
   display: inline-block;
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
+  background-color: #2b2c2c; /* TODO: Add color to variable */
+  border-radius: 50%;
   margin: 1rem;
   font-size: 1.3rem;
   color: var(--mainWhite);

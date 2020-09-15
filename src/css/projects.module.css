@@ -1,6 +1,5 @@
 .projects {
   padding: 4rem 0;
-  /* background-color: orange; */ /* TODO: Pick section background color */
 }
 .center {
   width: 80vw;
@@ -8,4 +7,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-column-gap: 2rem;
+}
+
+article {
+  background-color: var(--offWhite);
 }

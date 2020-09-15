@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { HamburgerVortexReverse } from "react-animated-burgers"
 import styles from "../css/navbar.module.css"
@@ -9,6 +9,8 @@ const Navbar = () => {
   const toggleButton = () => {
     setIsActive(prevState => !prevState)
   }
+  const [hovered, setHovered] = useState(false)
+  const toggleHover = () => setHovered(!hovered)
 
   return (
     <nav className={styles.navbar}>
@@ -33,7 +35,14 @@ const Navbar = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <Link to={item.path}>{item.text}</Link>
+                <Link
+                  to={item.path}
+                  onMouseEnter={toggleHover}
+                  onMouseLeave={toggleHover}
+                >
+                  {item.text}
+                </Link>
+                <div className={hovered ? styles.underline : ""}></div>
               </li>
             )
           })}

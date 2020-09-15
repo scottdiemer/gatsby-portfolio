@@ -1,21 +1,17 @@
 import React from "react"
-import {
-  AiFillLinkedin,
-  AiFillTwitterSquare,
-  AiFillGithub,
-} from "react-icons/ai"
+import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa"
 
 export default [
   {
-    icon: <AiFillLinkedin />,
+    icon: <FaLinkedinIn />,
     url: "https://linkedin.com",
   },
   {
-    icon: <AiFillGithub />,
+    icon: <FaGithub />,
     url: "https://github.com/scottdiemer",
   },
   {
-    icon: <AiFillTwitterSquare />,
+    icon: <FaTwitter />,
     url: "https://twitter.com/scottpdiemer",
   },
 ]
