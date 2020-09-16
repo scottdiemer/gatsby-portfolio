@@ -26,7 +26,7 @@
   height: 48px;
   width: 48px;
   line-height: 48px;
-  background-color: #2b2c2c; /* TODO: Add color to variable */
+  background-color: var(--primaryBackgroundColor);
   border-radius: 50%;
   margin: 1rem;
   font-size: 1.3rem;
@@ -40,6 +40,7 @@
 
 .copyright {
   text-transform: capitalize;
+  font-size: 0.8rem;
   letter-spacing: var(--mainSpacing);
   line-height: 2;
 }

@@ -60,7 +60,7 @@ const Contact = () => {
         <textarea
           name="message"
           id="message"
-          placeholder="What would you like to tell me?"
+          placeholder="What can I help you with?"
         ></textarea>
         <button type="submit" disabled={serverState.submitting}>
           Submit

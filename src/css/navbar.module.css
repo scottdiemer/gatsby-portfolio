@@ -8,6 +8,12 @@
   padding: 1rem 1.25rem;
 }
 
+.logo {
+  color: var(--primaryColor);
+  letter-spacing: var(--mainSpacing);
+  font-weight: 200;
+}
+
 .nav-links {
   list-style-type: none;
   transition: var(--mainTransition);
@@ -16,7 +22,7 @@
 }
 
 .show-nav {
-  height: 216px;
+  height: 16rem;
 }
 
 .nav-links a {

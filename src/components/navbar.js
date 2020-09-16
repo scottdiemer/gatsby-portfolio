@@ -17,11 +17,16 @@ const Navbar = () => {
       {/* <nav className={`${styles.navbar} ${styles.sticky}`}> */}
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <h4>Scott Diemer</h4>
+          <h4 className={styles.logo}>Scott Diemer</h4>
+          {/* Had issue using variable from Layout.css for barColor */}
           <HamburgerVortexReverse
             className={styles.toggleButton}
-            buttonWidth={40}
-            buttonStyle={{ outline: "none", background: "transparent" }}
+            buttonWidth={30}
+            buttonStyle={{
+              outline: "none",
+              background: "transparent",
+            }}
+            barColor="#cccccc"
             {...{ isActive, toggleButton }}
           />
         </div>

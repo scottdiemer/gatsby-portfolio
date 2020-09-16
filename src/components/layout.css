@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
 :root {
   --primaryColor: #feb633;
@@ -15,9 +14,9 @@
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --insetBoxShadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-  --mainFontFamily: "Lora";
+  --mainFontFamily: "Poppins";
   --mainFontWeight: 400;
-  --titleFontFamily: "Roboto";
+  --titleFontFamily: "Poppins";
   --titleFontWeight: bold;
   --titleColor: #cccccc;
   /* scale for 1.2 */

@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
       <div className={styles.copyright}>
         copyright &copy; Scott Diemer Portfolio {new Date().getFullYear()} all
-        rights reservered
+        rights reserved
       </div>
     </footer>
   )
