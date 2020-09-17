@@ -2,8 +2,17 @@ import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
 import styled from "styled-components"
+import { FaGithub } from "react-icons/fa"
 
-const Project = ({ slug, title, description, imageData, className }) => (
+const Project = ({
+  slug,
+  title,
+  description,
+  githubUrl,
+  technologies,
+  imageData,
+  className,
+}) => (
   <article className={className}>
     <Link to={`/${slug}/`}>
       <Image fluid={imageData} alt={title} />
@@ -16,6 +25,17 @@ const Project = ({ slug, title, description, imageData, className }) => (
       <p>
         <Link to={`/${slug}/`}>View this project &rarr;</Link>
       </p>
+      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+        <FaGithub />
+      </a>
+      <div className="technology-wrapper">
+        <div className="technology-title">Technologies</div>
+        <div className="technology-badges">
+          {technologies.map(tech => {
+            return <span className="technology">{tech}</span>
+          })}
+        </div>
+      </div>
     </div>
   </article>
 )

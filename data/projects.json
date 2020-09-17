@@ -4,13 +4,31 @@
     "slug": "project-1",
     "url": "https://example.com/",
     "image": "./images/project1.jpg",
-    "description": "I build this to show off my sweet skills"
+    "description": "I build this to show off my sweet skills",
+    "technologies": [
+      "html",
+      "css",
+      "javascript",
+      "reactjs",
+      "gatsby",
+      "styled-components"
+    ],
+    "githubUrl": "https://github.com"
   },
   {
     "title": "Another Project",
     "slug": "project-2",
     "url": "https://example.org/",
     "image": "./images/project2.jpg",
-    "description": "This one is also good"
+    "description": "This one is also good",
+    "technologies": [
+      "html",
+      "css",
+      "javascript",
+      "reactjs",
+      "gatsby",
+      "styled-components"
+    ],
+    "githubUrl": "https://github.com"
   }
 ]

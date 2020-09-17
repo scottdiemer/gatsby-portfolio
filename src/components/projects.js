@@ -22,6 +22,8 @@ const Projects = () => {
                 }
               }
             }
+            technologies
+            githubUrl
           }
         }
       }
@@ -39,6 +41,8 @@ const Projects = () => {
           const description = project.description
           const imageData = project.image.childImageSharp.fluid
           const slug = project.slug
+          const githubUrl = project.githubUrl
+          const technologies = project.technologies
 
           return (
             <Project
@@ -48,6 +52,8 @@ const Projects = () => {
               description={description}
               imageData={imageData}
               slug={slug}
+              githubUrl={githubUrl}
+              technologies={technologies}
             />
           )
         })}

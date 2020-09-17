@@ -10,5 +10,17 @@
 }
 
 article {
-  background-color: var(--offWhite);
+  background-color: var(--primaryBackgroundColor);
+}
+
+.project p {
+  color: var(--darkGray);
+}
+
+.project > .technology-title {
+  border-top: 2px solid white;
+}
+
+.technology {
+  background-color: var(--primaryColor);
 }

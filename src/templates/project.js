@@ -15,6 +15,8 @@ export const query = graphql`
           }
         }
       }
+      technologies
+      githubUrl
     }
   }
 `
