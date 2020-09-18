@@ -9,18 +9,18 @@
   grid-column-gap: 2rem;
 }
 
-article {
-  background-color: var(--primaryBackgroundColor);
+img {
+  border-radius: 8px 8px 0 0;
+}
+
+h5 a {
+  color: var(--primaryColor);
+}
+
+.description {
+  padding: 1rem;
 }
 
 .project p {
   color: var(--darkGray);
-}
-
-.project > .technology-title {
-  border-top: 2px solid white;
-}
-
-.technology {
-  background-color: var(--primaryColor);
 }
