@@ -24,9 +24,6 @@ const Project = ({
         </Link>
       </h5>
       <p>{description}</p>
-      {/* <p> */}
-      {/*   <Link to={`/${slug}/`}>View this project &rarr;</Link> */}
-      {/* </p> */}
       <a
         href={githubUrl}
         className="github-icon"
