@@ -41,11 +41,18 @@
   padding: 0;
 }
 
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
 body {
   font-family: var(--mainFontFamily);
   font-weight: var(--mainFontWeight);
   font-size: 1rem;
   line-height: 1.7;
+  height: 100%;
+  width: 100%;
 }
 
 section:nth-of-type(2n + 1) {
