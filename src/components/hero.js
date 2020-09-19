@@ -7,6 +7,11 @@ const Hero = () => {
     <section className="hero">
       <Particles
         params={{
+          background: {
+            color: {
+              value: "31189F",
+            },
+          },
           particles: {
             number: {
               value: 40,
@@ -123,8 +128,6 @@ const Hero = () => {
 
 export default styled(Hero)`
   .hero {
-    background-size: cover;
-    background-position: top;
     height: 100%;
   }
 `
