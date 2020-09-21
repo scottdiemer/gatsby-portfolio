@@ -1,12 +1,36 @@
 import React from "react"
-import Particles from "react-particles-js"
-import styled from "styled-components"
+import Particles from "react-tsparticles"
+
+// Inline-css seems to be the only way I could get
+// the welcome div overtop of tsparticles
+const welcomeStyle = {
+  width: "500px",
+  height: "350px",
+  position: "absolute",
+  backgroundColor: "white",
+  opacity: "0.5",
+}
+
+const tsparticlesStyle = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  textAlign: "center",
+}
 
 const Hero = () => {
   return (
     <section className="hero">
+      <div id="welcome" style={welcomeStyle}>
+        Welcome
+      </div>
       <Particles
+        style={tsparticlesStyle}
         params={{
+          backgroundMode: {
+            enable: true,
+            zIndex: 0,
+          },
           background: {
             color: {
               value: "31189F",
@@ -126,8 +150,4 @@ const Hero = () => {
   )
 }
 
-export default styled(Hero)`
-  .hero {
-    height: 100%;
-  }
-`
+export default Hero
