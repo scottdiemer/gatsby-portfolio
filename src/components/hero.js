@@ -5,16 +5,20 @@ import styled from "styled-components"
 // Inline-css seems to be the only way I could get
 // the welcome div overtop of tsparticles
 const welcomeStyle = {
-  top: "calc(50% - 25rem/2)",
-  left: "calc(50% - 30rem/2)",
+  top: "50%",
+  left: "50%",
   width: "30rem",
   height: "25rem",
   position: "absolute",
+  transform: "translate(-50%, -50%)",
   zIndex: "99",
+  backgroundColor: "white",
+  opacity: "0.5",
 }
 
 const tsparticlesStyle = {
   position: "relative",
+  backgroundSize: "cover",
   height: "100%",
   width: "100%",
 }
