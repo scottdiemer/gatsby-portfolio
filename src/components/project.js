@@ -36,8 +36,12 @@ const Project = ({
     <div className="technology-wrapper">
       <div className="technology-title">Technologies</div>
       <div className="technology-badges">
-        {technologies.map(tech => {
-          return <span className="technology">{tech}</span>
+        {technologies.map((tech, index) => {
+          return (
+            <span key={index} className="technology">
+              {tech}
+            </span>
+          )
         })}
       </div>
     </div>
