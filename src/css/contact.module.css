@@ -1,13 +1,12 @@
 .contact {
   background-color: var(--primaryColor);
   font-family: var(--defaultFont);
-  padding: 2rem;
 }
 
 form {
   background-color: var(--secondaryBackgroundColor);
-  height: 440px;
-  width: 600px;
+  height: 27.5rem;
+  width: 37.5rem;
   border-radius: 8px;
   box-shadow: var(--insetBoxShadow);
   margin: 5vh auto;

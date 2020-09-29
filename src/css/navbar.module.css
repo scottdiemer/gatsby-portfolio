@@ -1,5 +1,5 @@
 .navbar {
-  background-color: var(--primaryBackgroundColor);
+  background-color: var(--secondaryBackgroundColor);
 }
 .nav-header {
   display: flex;
@@ -22,7 +22,7 @@
 }
 
 .show-nav {
-  height: 16rem;
+  height: var(--navbarHeight);
 }
 
 .nav-links a {
@@ -44,17 +44,14 @@
   text-decoration: underline;
 }
 
-/* .underline { */
-/*   width: 50%; */
-/*   border-bottom: 5px solid var(--primaryColor); */
-/* } */
-
 .sticky {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  background-color: #252525;
+  background-color: var(--primaryBackgroundColor);
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 @media screen and (min-width: 576px) {

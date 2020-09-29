@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { HamburgerVortexReverse } from "react-animated-burgers"
 import styles from "../css/navbar.module.css"
@@ -10,11 +10,28 @@ const Navbar = () => {
     setIsActive(prevState => !prevState)
   }
   const [hovered, setHovered] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const toggleHover = () => setHovered(!hovered)
+  const handleOnScroll = () => {
+    const offset = window.screenY
+    console.log("offset: ", offset)
+    if (offset > 20) {
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleOnScroll)
+  })
 
   return (
-    <nav className={styles.navbar}>
-      {/* <nav className={`${styles.navbar} ${styles.sticky}`}> */}
+    <nav
+      className={
+        scrolled ? `${styles.navbar} ${styles.sticky}` : `${styles.navbar}`
+      }
+    >
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <h4 className={styles.logo}>Scott Diemer</h4>

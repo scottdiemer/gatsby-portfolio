@@ -2,7 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Project from "../components/project"
-import Title from "../components/title"
+import Title from "../components/utilities/title"
+import Section from "../components/utilities/section"
 import styles from "../css/projects.module.css"
 
 const Projects = () => {
@@ -33,7 +34,7 @@ const Projects = () => {
   const projects = data.allProjectsJson.edges
 
   return (
-    <section className={styles.projects}>
+    <Section className={styles.projects}>
       <Title title="projects" />
       <div className={styles.center}>
         {projects.map(({ node: project }, index) => {
@@ -58,7 +59,7 @@ const Projects = () => {
           )
         })}
       </div>
-    </section>
+    </Section>
   )
 }
 

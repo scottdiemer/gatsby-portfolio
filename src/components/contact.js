@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import axios from "axios"
-import Title from "./title"
+import Section from "./utilities/section"
+import Title from "./utilities/title"
 import styles from "../css/contact.module.css"
 
 const Contact = () => {
@@ -37,7 +38,7 @@ const Contact = () => {
       })
   }
   return (
-    <section className={styles.contact}>
+    <Section className={styles.contact}>
       <Title title="Contact" subtitle="me" />
       <form onSubmit={handleOnSubmit}>
         <label htmlFor="name">Name:</label>
@@ -72,7 +73,7 @@ const Contact = () => {
           </p>
         )}
       </form>
-    </section>
+    </Section>
   )
 }
 

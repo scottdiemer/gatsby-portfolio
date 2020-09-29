@@ -1,8 +1,7 @@
 .about {
-  padding: 4rem 8rem;
   text-align: center;
 }
 
-p {
+.description {
   color: var(--titleColor);
 }
