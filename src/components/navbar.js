@@ -12,18 +12,17 @@ const Navbar = () => {
   const [hovered, setHovered] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const toggleHover = () => setHovered(!hovered)
-  const handleOnScroll = () => {
-    const offset = window.screenY
-    console.log("offset: ", offset)
-    if (offset > 20) {
-      setScrolled(true)
-    } else {
-      setScrolled(false)
-    }
-  }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleOnScroll)
+    window.addEventListener("scroll", () => {
+      let offset = window.pageYOffset
+
+      if (offset < 200) {
+        setScrolled(false)
+      } else {
+        setScrolled(true)
+      }
+    })
   })
 
   return (
