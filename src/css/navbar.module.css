@@ -47,17 +47,10 @@
 .sticky {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
   background-color: var(--primaryBackgroundColor);
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-
-@media screen and (min-width: 576px) {
-  .navbar {
-    padding: 0 2rem;
-  }
+  z-index: 1;
 }
 
 @media screen and (min-width: 992px) {

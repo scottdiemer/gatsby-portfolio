@@ -17,7 +17,7 @@ const Navbar = () => {
     window.addEventListener("scroll", () => {
       let offset = window.pageYOffset
 
-      if (offset < 200) {
+      if (offset < 100) {
         setScrolled(false)
       } else {
         setScrolled(true)
