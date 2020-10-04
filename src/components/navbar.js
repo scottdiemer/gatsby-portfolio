@@ -58,8 +58,11 @@ const Navbar = () => {
               <li key={index}>
                 <AnchorLink
                   to={item.path}
+                  title={item.title}
+                  className={item.text}
                   onMouseEnter={toggleHover}
                   onMouseLeave={toggleHover}
+                  stripHash
                 >
                   {item.text}
                 </AnchorLink>
