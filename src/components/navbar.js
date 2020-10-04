@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { HamburgerVortexReverse } from "react-animated-burgers"
 import styles from "../css/navbar.module.css"
 import links from "../../data/links"
@@ -56,13 +56,13 @@ const Navbar = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <Link
+                <AnchorLink
                   to={item.path}
                   onMouseEnter={toggleHover}
                   onMouseLeave={toggleHover}
                 >
                   {item.text}
-                </Link>
+                </AnchorLink>
                 <div className={hovered ? styles.underline : ""}></div>
               </li>
             )
