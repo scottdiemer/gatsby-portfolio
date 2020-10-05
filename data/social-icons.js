@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa"
 export default [
   {
     icon: <FaLinkedinIn />,
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/scott-diemer-6b76241b8",
   },
   {
     icon: <FaGithub />,
