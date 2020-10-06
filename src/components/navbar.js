@@ -7,7 +7,7 @@ import links from "../../data/links"
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false)
   const toggleButton = () => {
-    setIsActive(prevState => !prevState)
+    setIsActive(isActive => !isActive)
   }
   const [hovered, setHovered] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -60,8 +60,6 @@ const Navbar = () => {
                   to={item.path}
                   title={item.title}
                   className={item.text}
-                  onMouseEnter={toggleHover}
-                  onMouseLeave={toggleHover}
                   stripHash
                 >
                   {item.text}

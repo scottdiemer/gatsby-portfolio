@@ -39,7 +39,7 @@ const Contact = () => {
   }
   return (
     <Section id="contact" className={styles.contact}>
-      <Title title="Contact" subtitle="me" />
+      <Title title="Contact Me" />
       <form onSubmit={handleOnSubmit}>
         <label htmlFor="name">Name:</label>
         <input
