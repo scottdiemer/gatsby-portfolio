@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Image from "gatsby-image"
-import styled from "styled-components"
 import { FaGithub } from "react-icons/fa"
 
 const Project = ({
@@ -15,7 +14,7 @@ const Project = ({
 }) => (
   <article className={className}>
     <Link to={`/${slug}/`}>
-      <Image fluid={imageData} alt={title} />
+      <Image className="image" fluid={imageData} alt={title} />
     </Link>
     <div className="description">
       <h5>
@@ -48,66 +47,4 @@ const Project = ({
   </article>
 )
 
-export default styled(Project)`
-  background-color: var(--secondaryBackgroundColor);
-  box-shadow: var(--lightShadow);
-  text-align: center;
-  margin: 1rem;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  .description {
-    height: 100%;
-    position: relative;
-  }
-
-  .github-icon {
-    positon: absolute;
-    bottom: 0;
-  }
-
-  .title {
-    text-decoration: none;
-    font-weight: 400;
-  }
-
-  technology-wrapper,
-  .technology-badges {
-    border-radius: 8px;
-  }
-
-  .technology-wrapper {
-    border-radius: 8px;
-  }
-
-  .technology-title {
-    border-top: 1px solid var(--darkGray);
-    border-bottom: 1px solid var(--darkGray);
-    color: var(--offWhite);
-    background-color: hsl(255, 0%, 30%);
-  }
-
-  .technology-badges {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0.5rem;
-    background-color: hsl(255, 0%, 22%);
-  }
-
-  .technology-badges .technology {
-    background-color: var(--primaryColor);
-    margin: 4px;
-    padding: 0 0.1rem;
-    border-radius: 3px;
-    font-size: 0.8rem;
-  }
-
-  .github-icon {
-    color: var(--offWhite);
-    height: 150px;
-    width: 150px;
-  }
-`
+export default Project

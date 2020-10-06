@@ -1,0 +1,63 @@
+.project {
+  background-color: var(--secondaryBackgroundColor);
+  box-shadow: var(--lightShadow);
+  text-align: center;
+  margin: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  height: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.description > p {
+  color: var(--offWhite);
+}
+
+.title {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.github-icon {
+  position: absolute;
+  top: calc(100% + 2rem);
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.github-icon > svg {
+  color: var(--offWhite);
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.technology-wrapper > .technology-title {
+  border-top: 1px solid var(--darkGray);
+  border-bottom: 1px solid var(--darkGray);
+  margin-top: 3rem;
+  color: var(--offWhite);
+  background-color: hsl(255, 0%, 30%);
+}
+
+.technology-badges {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  background-color: hsl(255, 0%, 22%);
+  border-radius: 0 0 8px 8px;
+}
+
+.technology-badges > .technology {
+  background-color: var(--primaryColor);
+  margin: 4px;
+  padding: 0 0.1rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}

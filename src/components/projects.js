@@ -5,6 +5,7 @@ import Project from "../components/project"
 import Title from "../components/utilities/title"
 import Section from "../components/utilities/section"
 import styles from "../css/projects.module.css"
+import "../css/project.css"
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -47,7 +48,7 @@ const Projects = () => {
 
           return (
             <Project
-              className={styles.project}
+              className="project"
               key={index}
               title={title}
               description={description}
