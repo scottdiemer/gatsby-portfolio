@@ -11,7 +11,6 @@ const Navbar = () => {
   }
   const [hovered, setHovered] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const toggleHover = () => setHovered(!hovered)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -23,7 +22,7 @@ const Navbar = () => {
         setScrolled(true)
       }
     })
-  })
+  }, [])
 
   return (
     <nav
