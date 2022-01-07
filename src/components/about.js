@@ -1,7 +1,7 @@
 import React from "react"
 import Title from "./utilities/title"
 import Section from "./utilities/section"
-import styles from "../css/about.module.css"
+import * as styles from "../css/about.module.css"
 
 const About = () => {
   return (

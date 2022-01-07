@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import axios from "axios"
 import Section from "./utilities/section"
 import Title from "./utilities/title"
-import styles from "../css/contact.module.css"
+import * as styles from "../css/contact.module.css"
 
 const Contact = () => {
   const [serverState, setServerState] = useState({
@@ -31,7 +31,7 @@ const Contact = () => {
       data: new FormData(form),
     })
       .then(() => {
-        handleServerResponse(true, "Thanks!", form)
+        handleServerResponse(true, "Your message have been sent!", form)
       })
       .catch(r => {
         handleServerResponse(false, r.response.data.error, form)

@@ -27,6 +27,7 @@ textarea {
   border: 0;
   transition: var(--mainTransition);
   border-bottom: 2px solid var(--primaryColor);
+  color: var(--lightGray);
 }
 input:focus,
 textarea:focus {

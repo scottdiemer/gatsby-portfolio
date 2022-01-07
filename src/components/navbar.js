@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from "react"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import React, { useState, useEffect, useCallback } from "react"
 import { HamburgerVortexReverse } from "react-animated-burgers"
-import styles from "../css/navbar.module.css"
+import * as styles from "../css/navbar.module.css"
 import links from "../../data/links"
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false)
-  const toggleButton = () => {
-    setIsActive(isActive => !isActive)
-  }
-  const [hovered, setHovered] = useState(false)
+  const toggleButton = useCallback(
+    () => setIsActive(prevState => !prevState),
+    []
+  )
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      setIsActive(false)
       let offset = window.pageYOffset
 
       if (offset < 100) {
@@ -32,7 +32,9 @@ const Navbar = () => {
     >
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <h4 className={styles.logo}>Scott Diemer</h4>
+          <div className={styles.logo}>
+            <a href="/">Scott Diemer</a>
+          </div>
           {/* Had issue using variable from Layout.css for barColor */}
           <HamburgerVortexReverse
             className={styles.toggleButton}
@@ -55,15 +57,7 @@ const Navbar = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <AnchorLink
-                  to={item.path}
-                  title={item.title}
-                  className={item.text}
-                  stripHash
-                >
-                  {item.text}
-                </AnchorLink>
-                <div className={hovered ? styles.underline : ""}></div>
+                <a href={item.path}>{item.text}</a>
               </li>
             )
           })}

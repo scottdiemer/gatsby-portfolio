@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Project from "../components/project"
-import styles from "../css/project-template.module.css"
 
 export const query = graphql`
   query($slug: String!) {
@@ -34,7 +33,6 @@ const ProjectTemplate = ({ data: { projectsJson: project } }) => {
   return (
     <Layout>
       <Project
-        className={styles.project}
         title={title}
         description={description}
         url={url}

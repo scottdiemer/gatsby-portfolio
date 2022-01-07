@@ -1,8 +1,8 @@
 [
   {
-    "title": "My Project",
+    "title": "Portfolio",
     "slug": "project-1",
-    "url": "https://example.com/",
+    "url": "https://scottdiemer.com",
     "image": "./images/project1.jpg",
     "description": "Elit numquam nisi ad maiores tempore. Nulla dolor perferendis fuga accusamus quam. Labore architecto ipsum numquam alias consectetur Id architecto?",
     "technologies": [
@@ -11,14 +11,15 @@
       "javascript",
       "reactjs",
       "gatsby",
-      "styled-components"
+      "styled-components",
+      "css modules"
     ],
-    "githubUrl": "https://github.com"
+    "githubUrl": "https://github.com/scottdiemer/gatsby-portfolio"
   },
   {
-    "title": "Another Project",
+    "title": "Farm City Feed Stores",
     "slug": "project-2",
-    "url": "https://example.org/",
+    "url": "https://farmcityfeed.com",
     "image": "./images/project2.jpg",
     "description": "Ipsum minima sed dicta laboriosam necessitatibus Fugit dolorem vero beatae.",
     "technologies": [
@@ -26,9 +27,9 @@
       "css",
       "javascript",
       "reactjs",
-      "gatsby",
-      "styled-components"
+      "nextjs",
+      "tailwindcss"
     ],
-    "githubUrl": "https://github.com"
+    "githubUrl": "https://github.com/scottdiemer/farmcity"
   }
 ]

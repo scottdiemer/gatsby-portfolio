@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/portfolio-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -34,12 +34,6 @@ module.exports = {
         rule: {
           include: /\.inline\.svg$/,
         },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -85,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

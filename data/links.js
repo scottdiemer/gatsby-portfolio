@@ -1,22 +1,19 @@
-export default [
+const links = [
   {
-    path: "/#hero",
-    text: "home",
-    title: "",
-  },
-  {
-    path: "/#about",
+    path: "#about",
     text: "about",
     title: "About Me",
   },
   {
-    path: "/#projects",
+    path: "#projects",
     text: "projects",
     title: "Projects",
   },
   {
-    path: "/#contact",
+    path: "#contact",
     text: "contact",
     title: "Contact Me",
   },
 ]
+
+export default links
