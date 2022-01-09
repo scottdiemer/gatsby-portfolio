@@ -2,21 +2,11 @@
   background-color: var(--secondaryBackgroundColor);
   box-shadow: var(--lightShadow);
   text-align: center;
-  margin: 1rem;
+  margin: 2rem 0;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.description {
-  height: 100%;
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.description > p {
-  color: var(--offWhite);
 }
 
 .title {
@@ -24,23 +14,28 @@
   font-weight: 400;
 }
 
-.github-icon {
-  position: absolute;
-  top: calc(100% + 2rem);
-  height: 2.5rem;
-  width: 2.5rem;
+.description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.description > p {
+  color: var(--offWhite);
+  flex-grow: 2;
+  padding: 1rem;
 }
 
 .github-icon > svg {
   color: var(--offWhite);
   height: 2.5rem;
   width: 2.5rem;
+  margin: 2rem auto 0;
 }
 
 .technology-wrapper > .technology-title {
   border-top: 1px solid var(--darkGray);
   border-bottom: 1px solid var(--darkGray);
-  margin-top: 3rem;
   color: var(--offWhite);
   background-color: hsl(255, 0%, 30%);
 }
@@ -49,15 +44,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   padding: 0.5rem;
   background-color: hsl(255, 0%, 22%);
   border-radius: 0 0 8px 8px;
 }
 
 .technology-badges > .technology {
-  background-color: var(--primaryColor);
+  background-color: transparent;
+  border: 1px solid var(--primaryColor);
   margin: 4px;
-  padding: 0 0.1rem;
+  padding: 1px 4px;
   border-radius: 3px;
   font-size: 0.8rem;
+  color: var(--primaryColor);
 }

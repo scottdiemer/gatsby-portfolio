@@ -4,4 +4,9 @@
 
 .description {
   color: var(--titleColor);
+  padding: 1rem 0;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-align: justify;
+  text-justify: auto;
 }

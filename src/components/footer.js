@@ -24,6 +24,7 @@ const Footer = () => {
               key={index}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={item.text}
             >
               {item.icon}
             </a>

@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <div className={styles.logo}>
-            <a href="/">Scott Diemer</a>
+            <a href="/#hero">Scott Diemer</a>
           </div>
           {/* Had issue using variable from Layout.css for barColor */}
           <HamburgerVortexReverse

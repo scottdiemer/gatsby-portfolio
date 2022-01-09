@@ -4,16 +4,14 @@ import Layout from "../components/layout"
 import Project from "../components/project"
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
       title
       description
       url
       image {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FIXED)
         }
       }
       technologies

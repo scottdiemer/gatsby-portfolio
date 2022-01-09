@@ -4,13 +4,13 @@
     "slug": "project-1",
     "url": "https://scottdiemer.com",
     "image": "./images/project1.jpg",
-    "description": "Elit numquam nisi ad maiores tempore. Nulla dolor perferendis fuga accusamus quam. Labore architecto ipsum numquam alias consectetur Id architecto?",
+    "description": "Portfolio site made in GatsbyJS",
     "technologies": [
       "html",
       "css",
       "javascript",
       "reactjs",
-      "gatsby",
+      "gatsbyjs",
       "styled-components",
       "css modules"
     ],
@@ -21,7 +21,7 @@
     "slug": "project-2",
     "url": "https://farmcityfeed.com",
     "image": "./images/project2.jpg",
-    "description": "Ipsum minima sed dicta laboriosam necessitatibus Fugit dolorem vero beatae.",
+    "description": "Site built to provide general information about Farm City Feed Stores. Made with NextJS using TailwindCSS",
     "technologies": [
       "html",
       "css",

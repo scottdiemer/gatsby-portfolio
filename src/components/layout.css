@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
-
 :root {
   --primaryColor: #feb633;
   --primaryBackgroundColor: #2b2c2c;
@@ -18,7 +16,7 @@
   --mainFontWeight: 400;
   --titleFontFamily: "Poppins";
   --titleFontWeight: bold;
-  --titleColor: #cccccc;
+  --titleColor: #ececec;
   /* scale for 1.2 */
   --ms-small-1: 1rem;
   --ms-small-2: 1.2rem;

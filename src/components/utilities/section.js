@@ -11,5 +11,9 @@ const Section = styled.section`
   @media screen and (min-width: 1024px) {
     padding: 4rem 8rem;
   }
+
+  @media screen and (min-width: 1500px) {
+    padding: 4rem 16rem;
+  }
 `
 export default Section

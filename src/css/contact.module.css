@@ -27,12 +27,16 @@ textarea {
   border: 0;
   transition: var(--mainTransition);
   border-bottom: 2px solid var(--primaryColor);
-  color: var(--lightGray);
+  color: var(--mainGray);
+  font-family: var(--mainFontFamily);
+  font-size: inherit;
 }
+
 input:focus,
 textarea:focus {
   border-bottom: 2px solid var(--darkGray);
 }
+
 label {
   font-family: var(--titleFontFamily);
   color: var(--primaryColor);
@@ -44,6 +48,7 @@ label:before {
   margin: 28px 0 0;
   color: var(--darkGray);
 }
+
 button {
   float: right;
   padding: 8px 12px;
@@ -57,6 +62,7 @@ button {
   cursor: pointer;
   transition: var(--mainTransition);
 }
+
 button:hover {
   background: var(--primaryColor);
   color: var(--mainWhite);

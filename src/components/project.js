@@ -1,10 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import Image from "gatsby-image"
 import { FaGithub } from "react-icons/fa"
 
 const Project = ({
-  slug,
   title,
   description,
   githubUrl,
@@ -13,21 +11,18 @@ const Project = ({
   className,
 }) => (
   <article className={className}>
-    <Link to={`/${slug}/`}>
+    <a href={githubUrl} target="_blank" rel="noopener noreferrer">
       <Image className="image" fluid={imageData} alt={title} />
-    </Link>
+    </a>
     <div className="description">
-      <h5>
-        <Link className="title" to={`/${slug}/`}>
-          {title}
-        </Link>
-      </h5>
+      <h3 className="title">{title}</h3>
       <p>{description}</p>
       <a
         href={githubUrl}
         className="github-icon"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={`Github link for ${title} project`}
       >
         <FaGithub size="1.5rem" />
       </a>

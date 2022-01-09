@@ -8,7 +8,9 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <main className="content">{children}</main>
       <Footer />
     </>

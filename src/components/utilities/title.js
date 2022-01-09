@@ -4,10 +4,10 @@ import styled from "styled-components"
 const Title = ({ title, subtitle, className }) => {
   return (
     <div className={className}>
-      <h4>
+      <h2>
         <span className="title">{title}</span>
         <span className="subtitle">{subtitle}</span>
-      </h4>
+      </h2>
       <div className="underline"></div>
     </div>
   )
@@ -16,7 +16,7 @@ const Title = ({ title, subtitle, className }) => {
 export default styled(Title)`
   text-transform: capitalize;
   margin-bottom: 2rem;
-  h4 {
+  h2 {
     text-align: center;
     letter-spacing: 7px;
   }
@@ -28,6 +28,9 @@ export default styled(Title)`
   }
   span {
     display: block;
+    font-family: var(--titleFontFamily);
+    font-size: var(--ms-large-3);
+    font-weight: var(--titleFontWeight);
   }
   .underline {
     width: 5rem;
@@ -36,6 +39,9 @@ export default styled(Title)`
     margin: 0.5rem auto;
   }
   @media (min-width: 576px) {
+    h2 {
+      var(--ms-small-3);
+    }
     span {
       display: inline-block;
       margin: 0 0.35rem;

@@ -13,6 +13,13 @@ module.exports = {
         path: `./data`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Poppins\:200,400,700`],
+        display: "swap",
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
