@@ -19,9 +19,7 @@ const Projects = () => {
             description
             image {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
               }
             }
             technologies
@@ -41,7 +39,7 @@ const Projects = () => {
         {projects.map(({ node: project }, index) => {
           const title = project.title
           const description = project.description
-          const imageData = project.image.childImageSharp.fluid
+          const imageData = project.image.childImageSharp.gatsbyImageData
           const slug = project.slug
           const githubUrl = project.githubUrl
           const technologies = project.technologies

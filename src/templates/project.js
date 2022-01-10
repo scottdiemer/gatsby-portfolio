@@ -11,7 +11,7 @@ export const query = graphql`
       url
       image {
         childImageSharp {
-          gatsbyImageData(layout: FIXED)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
         }
       }
       technologies
@@ -21,10 +21,11 @@ export const query = graphql`
 `
 
 const ProjectTemplate = ({ data: { projectsJson: project } }) => {
+  console.table(project)
   const title = project.title
   const description = project.description
   const url = project.url
-  const imageData = project.image.childImageSharp.fluid
+  const imageData = project.image.childImageSharp.gatsbyImageData
   const technologies = project.technologies
   const githubUrl = project.githubUrl
 
