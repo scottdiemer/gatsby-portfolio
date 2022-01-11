@@ -1,0 +1,8 @@
+/* Workaround due to not being able to hide hamburger-react component
+ * using module css.  */
+@media screen and (min-width: 992px) {
+  div.hamburger-react {
+    display: none;
+    visibility: hidden;
+  }
+}

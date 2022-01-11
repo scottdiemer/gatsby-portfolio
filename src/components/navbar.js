@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useCallback } from "react"
-import { HamburgerVortexReverse } from "react-animated-burgers"
-import * as styles from "../css/navbar.module.css"
+import { Sling as Hamburger } from "hamburger-react"
 import links from "../../data/links"
+import * as styles from "../css/navbar.module.css"
+// Used as workaround for not being able
+// to select hamburger-react from navbar.module.css
+import "../css/hamburger.css"
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false)
@@ -35,17 +38,7 @@ const Navbar = () => {
           <div className={styles.logo}>
             <a href="/#hero">Scott Diemer</a>
           </div>
-          {/* Had issue using variable from Layout.css for barColor */}
-          <HamburgerVortexReverse
-            className={styles.toggleButton}
-            buttonWidth={30}
-            buttonStyle={{
-              outline: "none",
-              background: "transparent",
-            }}
-            barColor="#cccccc"
-            {...{ isActive, toggleButton }}
-          />
+          <Hamburger onToggle={toggleButton} color="#cccccc" />
         </div>
         <ul
           className={

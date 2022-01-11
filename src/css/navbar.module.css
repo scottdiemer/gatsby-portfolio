@@ -68,10 +68,6 @@ html {
 }
 
 @media screen and (min-width: 992px) {
-  .toggle-button div span {
-    display: none;
-  }
-
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;

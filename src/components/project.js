@@ -10,7 +10,6 @@ const Project = ({
   imageData,
   className,
 }) => {
-  console.log("imageData: ", imageData)
   const image = getImage(imageData)
   return (
     <article className={className}>
