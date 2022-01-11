@@ -17,16 +17,16 @@ const About = () => {
       </p>
       <p className={styles.description}>
         My coding journey began when the internet was still in it’s infancy. I
-        had seen a person on AOL that was using a app that they wrote to knock
-        someone offline. At the time, I just remember being amazed that
-        something like this was even possible! So I started asking around to
-        find out how it was done. Most of these apps at the time were written in
-        Visual Basic and were accessing DLL files to do the lower level
+        came across a person on AOL that was using an app that they written to
+        knock someone offline. At the time, I just remember being amazed that
+        something like that was even possible! So, I started asking around to
+        find out how it was done. At the time, most of those apps were written
+        in Visual Basic and were accessing DLL files to do the lower level
         functionality. This is when I decided to go down the path of learning to
-        code. I was able to build the type of app that had impressed me so much.
-        This is when I knew I was hooked! I enrolled at Winter Park Tech in the
-        Business Computer Programming course with involved 600+ hours and
-        involved learning languages such as Visual Basic and C++.
+        code. Shortly afterwards, I was able to build the type of app that had
+        sparked my imagination. This is when I knew I was hooked! I enrolled at
+        Winter Park Tech in the Business Computer Programming course which
+        involved 600+ hours and learning languages such as Visual Basic and C++.
       </p>
     </Section>
   )
