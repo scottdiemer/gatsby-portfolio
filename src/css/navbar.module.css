@@ -54,8 +54,30 @@ html {
 
 .nav-links a:hover {
   color: var(--primaryColor);
-  text-decoration-thickness: 5rem;
-  text-decoration: underline;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--primaryColor);
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: 0.2rem;
+  bottom: 0;
+  left: 15%;
+  background-color: var(--primaryColor);
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
 .sticky {

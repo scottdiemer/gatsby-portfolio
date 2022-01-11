@@ -46,7 +46,9 @@ const Navbar = () => {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <a href={item.path}>{item.text}</a>
+                <a className={styles.hoverUnderlineAnimation} href={item.path}>
+                  {item.text}
+                </a>
               </li>
             )
           })}
