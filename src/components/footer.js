@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import links from "../../data/links"
-import socialIcons from "../../data/social-icons"
+import links from "../data/links"
+import socialIcons from "../data/social-icons"
 import * as styles from "../css/footer.module.css"
 
 const Footer = () => {

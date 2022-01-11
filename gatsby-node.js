@@ -17,7 +17,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const projects = result.data.allProjectsJson.nodes
 
   projects.forEach(({ slug }) => {
-    console.log("slug: ", slug)
     actions.createPage({
       path: `/${slug}/`,
       component: require.resolve("./src/templates/project.js"),

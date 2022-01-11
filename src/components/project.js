@@ -14,7 +14,12 @@ const Project = ({
   return (
     <article className={className}>
       <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-        <GatsbyImage className="image" image={image} alt={title} />
+        <GatsbyImage
+          className="image"
+          image={image}
+          alt={title}
+          placeholder="TRACED_SVG"
+        />
       </a>
       <div className="description">
         <h3 className="title">{title}</h3>

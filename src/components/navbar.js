@@ -1,22 +1,18 @@
-import React, { useState, useEffect, useCallback } from "react"
+import React, { useState, useEffect } from "react"
 import { Sling as Hamburger } from "hamburger-react"
-import links from "../../data/links"
+import links from "../data/links"
 import * as styles from "../css/navbar.module.css"
 // Used as workaround for not being able
 // to select hamburger-react from navbar.module.css
 import "../css/hamburger.css"
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(false)
-  const toggleButton = useCallback(
-    () => setIsActive(prevState => !prevState),
-    []
-  )
+  const [isOpen, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setIsActive(false)
+      setOpen(false)
       let offset = window.pageYOffset
 
       if (offset < 100) {
@@ -38,11 +34,11 @@ const Navbar = () => {
           <div className={styles.logo}>
             <a href="/#hero">Scott Diemer</a>
           </div>
-          <Hamburger onToggle={toggleButton} color="#cccccc" />
+          <Hamburger toggled={isOpen} toggle={setOpen} color="#cccccc" />
         </div>
         <ul
           className={
-            isActive
+            isOpen
               ? `${styles.navLinks} ${styles.showNav}`
               : `${styles.navLinks}`
           }

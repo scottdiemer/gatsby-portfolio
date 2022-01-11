@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `project`,
-        path: `./data`,
+        path: `${__dirname}/src/data`,
       },
     },
     {
@@ -30,10 +30,8 @@ module.exports = {
         name: `scottdiemer-portfolio`,
         short_name: `portfolio`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/images/portfolio-icon.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/src/images/portfolio-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
