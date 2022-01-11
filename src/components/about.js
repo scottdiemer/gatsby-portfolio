@@ -10,10 +10,10 @@ const About = () => {
       <p className={styles.description}>
         👋Hi, I’m Scott! A Front-End Developer based in Orlando, Florida. I have
         a passion for building web applications that are performant, accessible,
-        and with a great overall user experience! I love learning so you’ll
+        and offer a great overall user experience! I love learning, so you’ll
         always find me working on random side projects, watching coding videos,
         listening to podcasts and reading articles. I also participate in the
-        #100DaysOfCode challenge which I’ve completed multiple times.
+        #100DaysOfCode challenge, which I’ve completed multiple times.
       </p>
       <p className={styles.description}>
         My coding journey began when the internet was still in it’s infancy. I
