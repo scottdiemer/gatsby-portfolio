@@ -1,42 +1,11 @@
-import React, { useState } from "react"
-import axios from "axios"
+import React from "react"
+import { useForm, ValidationError } from "@formspree/react"
 import Section from "./utilities/section"
 import Title from "./utilities/title"
 import * as styles from "../css/contact.module.css"
 
 const Contact = () => {
-  const [serverState, setServerState] = useState({
-    submitting: false,
-    status: null,
-  })
-
-  const handleServerResponse = (ok, msg, form) => {
-    setServerState({
-      submitting: false,
-      status: { ok, msg },
-    })
-    if (ok) {
-      form.reset()
-    }
-  }
-
-  const handleOnSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    // TODO: Switch location of email address
-    setServerState({ submitting: true })
-    axios({
-      method: "post",
-      url: `https://formspree.io/sdiemer@cfl.rr.com`,
-      data: new FormData(form),
-    })
-      .then(() => {
-        handleServerResponse(true, "Your message have been sent!", form)
-      })
-      .catch(r => {
-        handleServerResponse(false, r.response.data.error, form)
-      })
-  }
+  const [state, handleOnSubmit] = useForm("mdowqqgy")
   return (
     <Section id="contact" className={styles.contact}>
       <Title title="Contact Me" />
@@ -49,6 +18,7 @@ const Contact = () => {
           placeholder="What is your name?"
           required
         />
+        <ValidationError prefix="Name" field="name" errors={state.errors} />
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -57,6 +27,7 @@ const Contact = () => {
           placeholder="How can I contact you back?"
           required
         />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
         <label htmlFor="message">Message:</label>
         <textarea
           name="message"
@@ -64,13 +35,16 @@ const Contact = () => {
           placeholder="What can I help you with?"
           required
         ></textarea>
-        <button type="submit" disabled={serverState.submitting}>
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+        <button type="submit" disabled={state.submitting}>
           Submit
         </button>
-        {serverState.status && (
-          <p className={!serverState.status.ok ? "errorMsg" : ""}>
-            {serverState.status.msg}
-          </p>
+        {state.succeeded && (
+          <p style={{ color: "var(--primaryColor)" }}>Your message is sent!</p>
         )}
       </form>
     </Section>

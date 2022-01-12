@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Scott Diemer <scottdiemer@gmail.com>",
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "axois": "0.0.1-security",
     "babel-plugin-styled-components": "^1.11.1",
     "framer-motion": "^2.7.7",
