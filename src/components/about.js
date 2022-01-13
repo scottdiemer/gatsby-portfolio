@@ -13,7 +13,8 @@ const About = () => {
         and offer a great overall user experience! I love learning, so you’ll
         always find me working on random side projects, watching coding videos,
         listening to podcasts and reading articles. I also participate in the
-        #100DaysOfCode challenge, which I’ve completed multiple times.
+        <strong> #100DaysOfCode</strong> challenge, which I’ve completed
+        multiple times.
       </p>
       <p className={styles.description}>
         My coding journey began when the internet was still in it’s infancy. I
@@ -22,11 +23,14 @@ const About = () => {
         something like that was even possible! So, I started asking around to
         find out how it was done. At the time, most of those apps were written
         in Visual Basic and were accessing DLL files to do the lower level
-        functionality. This is when I decided to go down the path of learning to
-        code. Shortly afterwards, I was able to build the type of app that had
-        sparked my imagination. This is when I knew I was hooked! I enrolled at
-        Winter Park Tech in the Business Computer Programming course which
-        involved 600+ hours and learning languages such as Visual Basic and C++.
+        functionality.
+      </p>
+      <p className={styles.description}>
+        This is when I decided to go down the path of learning to code. Shortly
+        afterwards, I was able to build the type of app that had sparked my
+        imagination. This is when I knew I was hooked! I enrolled at Winter Park
+        Tech in the Business Computer Programming course which involved 600+
+        hours and learning languages such as Visual Basic and C++.
       </p>
     </Section>
   )
