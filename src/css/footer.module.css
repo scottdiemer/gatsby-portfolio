@@ -22,7 +22,7 @@
 }
 
 .icons a {
-  display: inline-block;
+  display: inline-flex;
   height: 48px;
   width: 48px;
   line-height: 48px;
@@ -36,6 +36,10 @@
 
 .icons a:hover {
   color: var(--primaryColor);
+}
+
+.icons a svg {
+  margin: auto;
 }
 
 .copyright {
