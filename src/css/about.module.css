@@ -1,16 +1,12 @@
-.about {
-  text-align: center;
-}
-
 .description {
   color: var(--titleColor);
   padding: 1rem 0;
   line-height: 1.8;
   font-size: 1.1rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   text-align: left;
   text-indent: 4rem;
-  text-justify: auto;
+  /* text-justify: auto; */
   max-width: 800px;
   margin: 0 auto;
 }
@@ -19,4 +15,13 @@ strong {
   color: var(--primaryColor);
   opacity: 0.9;
   font-weight: 400;
+}
+
+@media screen and (max-width: 563px) {
+  .description {
+    text-indent: 2rem;
+    text-align: left;
+    line-height: 2;
+    letter-spacing: 0.15rem;
+  }
 }

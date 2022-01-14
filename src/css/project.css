@@ -1,6 +1,8 @@
 .project {
-  background-color: var(--secondaryBackgroundColor);
-  box-shadow: var(--lightShadow);
+  background-color: hsl(255, 0%, 22%);
+  border: 1px solid var(--mainGray);
+  box-shadow: 0px 8px 6px -6px rgba(254, 182, 51, 0.7); /* rgba(235, 235, 235, 0.3); */
+  /* box-shadow: 5px 5px 15px 0px rgba(235, 235, 235, 0.1); */
   text-align: center;
   margin: 2rem 0;
   border-radius: 8px;
@@ -47,7 +49,6 @@
   align-items: flex-start;
   justify-content: space-around;
   padding: 0.5rem;
-  background-color: hsl(255, 0%, 22%);
   border-radius: 0 0 8px 8px;
 }
 

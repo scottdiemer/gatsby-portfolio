@@ -5,7 +5,7 @@ import * as styles from "../css/about.module.css"
 
 const About = () => {
   return (
-    <Section id="about" className={styles.about}>
+    <Section id="about">
       <Title title="About Me" />
       <p className={styles.description}>
         👋Hi, I’m Scott! A Front-End Developer based in Orlando, Florida. I have
