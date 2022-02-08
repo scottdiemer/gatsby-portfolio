@@ -20,7 +20,13 @@
     "url": "https://farmcityfeed.com",
     "image": "./images/project2.jpg",
     "description": "Site built to provide general information about Farm City Feed Stores. Made with NextJS using TailwindCSS",
-    "technologies": ["reactjs", "nextjs", "tailwindcss"],
+    "technologies": [
+      "reactjs",
+      "nextjs",
+      "tailwindcss",
+      "graphql",
+      "react-query"
+    ],
     "githubUrl": "https://github.com/scottdiemer/farmcity"
   }
 ]
