@@ -18,8 +18,8 @@ const About = () => {
       </p>
       <p className={styles.description}>
         My coding journey began when the internet was still in it’s infancy. I
-        came across a person on AOL that was using an app that they wrote to
-        knock someone offline. At the time, I just remember being amazed that
+        came across a person on AOL that was using an app that they had written
+        to knock someone offline. At the time, I just remember being amazed that
         something like that was even possible! So, I started asking around to
         find out how it was done. At the time, most of those apps were written
         in Visual Basic and were accessing DLL files to do the lower level
