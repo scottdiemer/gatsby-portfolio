@@ -41,6 +41,7 @@ const Projects = () => {
           const description = project.description
           const imageData = project.image.childImageSharp.gatsbyImageData
           const slug = project.slug
+          const url = project.url
           const githubUrl = project.githubUrl
           const technologies = project.technologies
 
@@ -52,6 +53,7 @@ const Projects = () => {
               description={description}
               imageData={imageData}
               slug={slug}
+              url={url}
               githubUrl={githubUrl}
               technologies={technologies}
             />

@@ -1,10 +1,11 @@
 import React from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { FaGithub } from "react-icons/fa"
+import { FaBroadcastTower, FaGithub } from "react-icons/fa"
 
 const Project = ({
   title,
   description,
+  url,
   githubUrl,
   technologies,
   imageData,
@@ -24,15 +25,28 @@ const Project = ({
       <div className="description">
         <h3 className="title">{title}</h3>
         <p>{description}</p>
-        <a
-          href={githubUrl}
-          className="github-icon"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`Github link for ${title} project`}
-        >
-          <FaGithub size="1.5rem" />
-        </a>
+        <div class="button-container">
+          <a
+            href={url}
+            className="icon-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Live site link for ${title} project`}
+          >
+            <FaBroadcastTower className="icon" size="1.5rem" />
+            Live Site
+          </a>
+          <a
+            href={githubUrl}
+            className="icon-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Github link for ${title} project`}
+          >
+            <FaGithub className="icon" size="1.5rem" />
+            Github
+          </a>
+        </div>
       </div>
       <div className="technology-wrapper">
         <div className="technology-title">Technologies</div>
